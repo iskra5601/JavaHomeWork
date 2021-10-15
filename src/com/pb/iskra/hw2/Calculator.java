@@ -10,10 +10,9 @@ public class Calculator {
        String sing;
 
         System.out.println("Введите цифру");
-
         operand1 = scan.nextInt();
-        System.out.println("Введите знак арифметической операции");
 
+        System.out.println("Введите знак арифметической операции");
         sing = scan.next();
 
         System.out.println("Введите цифру");
@@ -25,7 +24,7 @@ public class Calculator {
                 System.out.println("Сложение:" + (operand1 + operand2));
                 break;
             case "-":
-                System.out.println("вычитание:" + (operand1 - operand2));
+                System.out.println("Вычитание:" + (operand1 - operand2));
                 break;
             case "/":
                 if (operand2 == 0) {
