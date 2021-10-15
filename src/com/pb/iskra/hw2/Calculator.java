@@ -28,7 +28,7 @@ public class Calculator {
                 break;
             case "/":
                 if (operand2 == 0) {
-                    System.out.print("Не стоит делить на 0");}
+                    System.out.print("Ошибка. Не нужно делить на 0. Хотите взорвать вселенную?");}
                     else { System.out.println("Деление:" + (operand1 / operand2));
                 }
                 break;
