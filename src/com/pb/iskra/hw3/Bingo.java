@@ -12,7 +12,7 @@ public static void main(String[] args) {
     int attempt = 0;
     Random random = new Random();
 
-    int number = random.nextInt(101);      // Задуманное число.Вывел специаяльно. Чтобы легче проверить.
+    int number = random.nextInt(101);      // 99    Вывел специаяльно. Чтобы легче проверить.
     int operand1;
     System.out.println("загаданное число: " + number + ":");
     Scanner scan = new Scanner(System.in);
