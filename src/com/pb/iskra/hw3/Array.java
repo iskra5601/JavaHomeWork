@@ -50,7 +50,7 @@ public class Array {
         }
         System.out.print("Отсортированный массив:");
         for (int i = 0; i < size; i++) {
-            System.out.println("" + array[i]); // Выводим на экран, отсортерованный массив
+            System.out.println("" + array[i]); // Выводим на экран, отсортированный массив
         }
     }
 }
