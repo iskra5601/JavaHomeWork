@@ -11,25 +11,25 @@ public class Array {
         int positive = 0;
         boolean isSorted = false;
         int buf;
-        System.out.println("   Ведите элементы массива:");
+        System.out.println("Ведите элементы массива:");
 
         for (int i = 0; i < size; i++) {
             array[i] = scan.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
         }
-        System.out.print("    Вот элементы массива:");
+        System.out.print("Вот элементы массива:");
         for (int i = 0; i < size; i++) {
             System.out.println(" " + array[i]); // Выводим на экран, полученный массив
         }
         for (int b = 0; b < size; b++) {
             sum = sum + array[b];
         } // сумма
-        System.out.println("    Сумма элементов в массиве:" + sum); // Выводим на экран, полученный массив
+        System.out.println("Сумма элементов в массиве:" + sum); // Выводим на экран, полученный массив
         for (int i = 0; i < size; i++) {
             if (array[i] > 0)
                 positive++;
 
         }
-        System.out.println("   Позитивные элементы:" + positive);
+        System.out.println("Позитивные элементы:" + positive);
 
 
         while(!isSorted) {
@@ -45,9 +45,12 @@ public class Array {
                     array[i+1] = buf;
                 }
 
-                System.out.println("Сортировка:" + array[i]);
             }
 
+        }
+        System.out.print("Отсортированный массив:");
+        for (int i = 0; i < size; i++) {
+            System.out.println("" + array[i]); // Выводим на экран, отсортерованный массив
         }
     }
 }
