@@ -6,11 +6,11 @@ public class Array {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); // Объявляем Scanner
         int sum = 0;
-        int size = 3;
+        int size = 10;
         int array[] = new int[size]; // Создаём массив int размером в size
         int positive = 0;
-        int n = array.length;
-
+        boolean isSorted = false;
+        int buf;
         System.out.println("   Ведите элементы массива:");
 
         for (int i = 0; i < size; i++) {
@@ -32,15 +32,22 @@ public class Array {
         System.out.println("   Позитивные элементы:" + positive);
 
 
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++)
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+        while(!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < array.length-1; i++) {
+                if(array[i] < array[i+1])
 
+                {
+                    isSorted = false;
+
+                    buf = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = buf;
                 }
-            System.out.println("Сортировка:" + array[i]);;
+
+                System.out.println("Сортировка:" + array[i]);
+            }
+
         }
     }
 }
