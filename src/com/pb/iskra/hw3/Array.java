@@ -9,28 +9,42 @@ public class Array {
         int size = 3;
         int array[] = new int[size]; // Создаём массив int размером в size
         int positive = 0;
-        System.out.println("Ведите элементы массива:");
+        int n = array.length;
+
+        System.out.println("   Ведите элементы массива:");
 
         for (int i = 0; i < size; i++) {
             array[i] = scan.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
         }
-        System.out.print("Вот элементы массива:");
+        System.out.print("    Вот элементы массива:");
         for (int i = 0; i < size; i++) {
-            System.out.print(" " + array[i]); // Выводим на экран, полученный массив
+            System.out.println(" " + array[i]); // Выводим на экран, полученный массив
         }
         for (int b = 0; b < size; b++) {
             sum = sum + array[b];
         } // сумма
-        System.out.print("Сумма элементов в массиве:" + sum); // Выводим на экран, полученный массив
+        System.out.println("    Сумма элементов в массиве:" + sum); // Выводим на экран, полученный массив
         for (int i = 0; i < size; i++) {
             if (array[i] > 0)
-                positive++ ;
+                positive++;
 
         }
-            System.out.print("Позитивные элементы:" + positive);
+        System.out.println("   Позитивные элементы:" + positive);
 
 
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++)
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
 
+                }
+            System.out.println("Сортировка:" + array[i]);;
         }
     }
+}
+
+
+
 
