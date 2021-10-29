@@ -13,14 +13,12 @@ public class CapitalLetter {
     public static String wisdomFirst(String wisdom) {
         StringBuilder sb = new StringBuilder(wisdom);
         for (int i = 0; i < sb.length(); i++) {
-            if (i == 0 || sb.charAt(i - 1) == ' ')//first letter to uppercase by default
+            if (i == 0 || sb.charAt(i - 1) == ' ')
                 sb.setCharAt(i, Character.toUpperCase(sb.charAt(i)));
         }
         return sb.toString();
     }
 
-    // public static String firstUpperCase(String wisdom){
-//toUpperCase() + wisdom.substring(1);
 }
 
 
