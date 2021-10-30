@@ -10,8 +10,9 @@ public class Anagram {
         String comparison1 = scan.nextLine();
         System.out.println("Введите фразу для сравнение :");
         String comparison2 = scan.nextLine();
-        comparison1 = comparison1.replaceAll("[,.-]", "");
 
+        comparison1 = comparison1.replaceAll("[,.-]", "");
+        comparison2 = comparison2.replaceAll("[,.-]", "");
 
         String comparison3 = comparison1.toUpperCase();
         String comparison4 = comparison2.toUpperCase();
@@ -33,7 +34,7 @@ public class Anagram {
     public static boolean anagram_checker(char[] sp, char[] sp1) {
         for (int i = 0; i < sp.length; i++) {
 
-            boolean isLetter = Character.isLetter(i);
+            boolean isLetter = Character.isLetter(sp[i]);
             if (isLetter == false) continue;
 
             if (sp[i] != sp1[i]) {
