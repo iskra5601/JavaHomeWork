@@ -1,10 +1,9 @@
 package com.pb.iskra.hw6;
 
-public class Veterinarian{
-    Animal animal = new Animal();
+public class Veterinarian {
 
 
-    public static void treatAnimal (Animal animal) {
+    public void treatAnimal(Animal animal) {
 
         System.out.println(animal.getFood());
         System.out.println(animal.getLocation());

@@ -66,13 +66,13 @@ public class VetСlinic {
             a.goTo();
 
         }
-
+         Class cl = Veterinarian.class;
 
         Class clazz = Class.forName("com.pb.iskra.hw6.Veterinarian");
 
-        Constructor constr = clazz.getConstructor(new Class[] {Veterinarian.class});
-      //  Class cl = Veterinarian.class;
-        Object obj = constr.newInstance("Поле");
+        Constructor constr = cl.getConstructor();
+
+        Object obj = constr.newInstance();
         if (obj instanceof Veterinarian) {
             ((Veterinarian) obj).treatAnimal(Ivan);
         }

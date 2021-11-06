@@ -77,6 +77,8 @@ public class Cat extends Animal {
     public int hashCode() {
         return Objects.hash(color, breed, age);
     }
+
+
 }
    //В пакете hw6 создайте класс Animal и расширяющие его классы Dog, Cat, Horse.
 //Класс Animal содержит переменные food, location и методы makeNoise, eat, sleep.
