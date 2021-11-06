@@ -42,13 +42,13 @@ public class Animal {
     }
     public void makeNoise() {
 
-        System.out.println("Все животные спят");
+        System.out.println("Все животные шумят");
 
     }
 
-    public void sleep(String fio) {
+    public void sleep(String name) {
 
-        System.out.println(fio + " взял 3 книги");
+        System.out.println(name+ " взял 3 книги");
 
     }
     public void goTo(){

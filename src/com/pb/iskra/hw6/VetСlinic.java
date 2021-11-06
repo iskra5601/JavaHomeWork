@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class VetСlinic {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws Exception {
 
         Horse Ivan = new Horse();
         Cat Vasia = new Cat();
@@ -72,7 +72,7 @@ public class VetСlinic {
 
         Constructor constr = clazz.getConstructor(new Class[] {Veterinarian.class});
       //  Class cl = Veterinarian.class;
-        Object obj = constr.newInstance("Будка");
+        Object obj = constr.newInstance("Поле");
         if (obj instanceof Veterinarian) {
             ((Veterinarian) obj).treatAnimal(Ivan);
         }
