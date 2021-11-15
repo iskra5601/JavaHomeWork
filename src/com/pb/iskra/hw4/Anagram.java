@@ -11,8 +11,7 @@ public class Anagram {
         System.out.println("Введите фразу для сравнение :");
         String comparison2 = scan.nextLine();
 
-        comparison1 = comparison1.replaceAll("[,.-]", "");
-        comparison2 = comparison2.replaceAll("[,.-]", "");
+         comparison2 = comparison2.replaceAll("[,.-]", "");
 
         String comparison3 = comparison1.toUpperCase();
         String comparison4 = comparison2.toUpperCase();
