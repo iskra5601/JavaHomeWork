@@ -33,10 +33,7 @@ public class Auth {
         int login1 = login.length();
         int password1 = password.length();
 
-        if (login1 < 5) {
-            throw new WrongLoginException(login);
-        }
-        if (login1 > 20) {
+        if (login1 < 5 || login1 > 20) {
             throw new WrongLoginException(login);
         }
         String pattern = "[а-яёА-ЯЁ.,\\/#!$%\\^&\\*;:{}=\\-`~_()+]";
@@ -50,13 +47,9 @@ public class Auth {
         } else {
             setLogin(login);
         }
-        if (password1 < 5) {
+        if (password1 < 5 || password1 > 20) {
             throw new WrongPasswordException(password);
         }
-        if (password1 > 20){
-            throw new WrongPasswordException(password);
-        }
-
         String pattern2 = "[а-яёА-ЯЁ.,\\/#!$%\\^&\\*;:{}=\\-`~()+]";
 
         Pattern r2 = Pattern.compile(pattern2);
