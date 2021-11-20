@@ -11,7 +11,7 @@ public class Interval {
         System.out.println("Введите цифру");
         operand1 = scan.nextInt();
 
-        if (operand1 >= 0 & operand1<15)  {
+        if (operand1 >= 0 && operand1<15)  {
             System.out.print("Число в периоде: от 0  до 14");}
         if (operand1 >= 15 & operand1<=35) {
             System.out.print("Число в периоде: от 15  до 35");}

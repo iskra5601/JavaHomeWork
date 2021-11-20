@@ -24,7 +24,7 @@ public class OnlineShop {
             auth.signUp(login, password, confirmPassword);
 
         } catch (WrongLoginException e) {
-            System.out.println("Логин не может сождержать кириллицу иди символы");
+            System.out.println("Логин не может сождержать кириллицу или символы. Должен быть от 5-20 символов");
             e.printStackTrace();
         } catch (WrongPasswordException e2) {
             System.out.println("Невалидный пароль");
