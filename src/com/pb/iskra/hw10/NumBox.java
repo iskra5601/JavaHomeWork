@@ -3,7 +3,7 @@ package com.pb.iskra.hw10;
 public class NumBox<T extends Number> {
     // - массив из объектов класса T,----------DONE
     private T[] numbers;
-
+    int counter = 0;
     //    инициализировать массив в конструкторе.----------DONE
     public NumBox(T[] numbers) {
 
@@ -33,8 +33,9 @@ public class NumBox<T extends Number> {
     }
 
     //        - метод int length() возвращает текущее количество элементов.
-    public void length() {
-        return;
+    public int length() {
+        System.out.println("Кол-во элементов в массивe:  " + counter);
+        return counter ;
     }
 
     //        - метод double sum() - сумма всех элементов массива.----------DONE
@@ -52,7 +53,7 @@ public class NumBox<T extends Number> {
     //        - метод double average() - подсчет среднего арифметического среди элементов массива.----------DONE
     public double average() {
         double average = 0;
-        int counter = 0;
+
         for (T i : numbers) {
 
             if (i != null) {

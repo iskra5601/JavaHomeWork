@@ -18,6 +18,7 @@ public class NumBoxCheck {
         numBox.average();
         System.out.println("Число в индексе 2"+numBox.get(2));
         numBox.sum();
+        numBox.length();
     }
 
 }
