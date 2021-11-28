@@ -1,8 +1,22 @@
 package com.pb.iskra.hw10;
 
 public class NumBox<T extends Number> {
-    // - массив из объектов класса T,----------DONE
     private T[] numbers;
+    public T[] getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(T[] numbers) {
+        this.numbers = numbers;
+    }
+
+    // - массив из объектов класса T,----------DONE
+
+
+
+
+
+
     int counter = 0;
     //    инициализировать массив в конструкторе.----------DONE
     public NumBox(T[] numbers) {
@@ -66,15 +80,17 @@ public class NumBox<T extends Number> {
     }
 //    - метод T max() - максимальный элемент массива.
 
-  //  public T max() {
-//        T maxValue = numbers.get(0);
-//        for (int i=0;i < numbers.length; i++){
-//            if(numbers.doubleValue() > maxValue.doubleValue())
-//                maxValue=numbers.get(i);
-//
-//        }
-//
-//    }
+  public T max() {
+        T maxValue = numbers[0];
+
+        for (int i=0;i < counter; i++){
+           if(numbers[i].doubleValue() > maxValue.doubleValue())
+                maxValue=numbers[i];
+
+        }
+      System.out.println("максимальное число : " +maxValue);
+    return maxValue;
+    }
 }
 
 
